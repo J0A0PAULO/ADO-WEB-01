@@ -20,6 +20,7 @@ import java.rmi.server.ServerCloneException;
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
 
+            //caso a porta 800 esteja rodando no seu pc, ira retornar erro!!!
             String json = "{\"item\":\"" + adoItem + "\"}";
             response.getWriter().write(json);
 
